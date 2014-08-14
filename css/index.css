@@ -1,0 +1,76 @@
+#header{
+	width:100%;
+	height: 50px;
+	background-color: #6f5499; 
+	color: #DFDFBB;
+}
+
+#content{
+	height: 100%;
+	width: 100%;
+	background-color: #DFDFBB;
+	color: #6f5499;
+	top: 0px;
+	bottom: 0px;
+}
+
+#footer{
+	
+}
+
+body{
+	height: 100%;
+}
+
+html{
+	font-family: 'Roboto Slab', serif;
+	height: 100%;
+}
+
+#tiles{
+	position: relative;
+}
+
+marquee{
+	bottom: 0px;
+	position: fixed;
+	width: 100%;
+	background-color: black;
+	color: green;
+	font-weight: bold;
+	height: 40px;
+}
+
+#sportsTicker{
+	display: inline;
+	list-style-type: none;
+}
+
+.sportsItem{
+	margin: 20px;
+}
+
+i{
+	height: 40px;
+	width: auto;
+	display: block;
+}
+
+.wi{
+	font-size: 40px;
+	width: auto;
+	height: auto;
+	display: block;
+}
+
+#hideAll
+ {
+   position: fixed;
+   left: 0px; 
+   right: 0px; 
+   top: 0px; 
+   bottom: 0px; 
+   background-color: white;
+   z-index: 99; /* Higher than anything else in the document */
+
+ }

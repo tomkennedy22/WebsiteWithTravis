@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html>
+	<head>
+
+		<link rel="stylesheet" type="text/css" href="img/weather-icons-master/weather-icons/weather-icons.less">
+		<link rel="stylesheet" type="text/css" href="img/weather-icons-master/css/weather-icons.min.css">
+		<link href='http://fonts.googleapis.com/css?family=Roboto+Slab' rel='stylesheet' type='text/css'>
+		  <!-- Custom stylesheet -->
+  		<link rel="stylesheet" href="css/index.css">
+  		<!-- CSS Reset -->
+		<link rel="stylesheet" href="css/reset.css">
+
+		<!-- Global CSS for the page and tiles -->
+		<link rel="stylesheet" href="css/main.css">
+  		<link href="css/bootstrap.min.css" rel="stylesheet">
+
+	</head>
+
+	<body>
+	<div style="display: none" id="hideAll">&nbsp;</div>
+
+	<div id="header">
+		<h1>Stay Together</h1>
+	</div>
+	<div id="content" role="main">
+		<ul id="tiles">
+			<li id="1"></li>
+			<li id="2"></li>
+			<li id="3"></li>
+			<li id="4"></li>
+
+		</ul>
+	</div>
+	<div id="footer">
+		<marquee behavior="scroll" direction="right" 
+		    onmouseover="this.stop();" 
+		    onmouseout="this.start();" id="sportsTicker">
+		    
+		</marquee>
+	</div>
+
+	<!-- include jQuery -->
+    <script src="js/jquery.min.js"></script>
+
+    <!-- Include the imagesLoaded plug-in -->
+    <script src="js/libs/jquery.imagesloaded.js"></script>
+
+    <!-- Include the plug-in -->
+    <script src="js/jquery.wookmark.js"></script>
+
+    <script src="js/index.js"></script>
+
+    <script type="text/javascript">
+	   document.getElementById("hideAll").style.display = "block";
+	    $(document).ready(function() {
+    		  // put all your jQuery goodness in here.
+	 		  document.getElementById("hideAll").style.display = "none"; 
+	 		  drawTiles();
+	 		 });
+	 </script> 
+
+   <!--<script src="jquery.marquee.js"></script>-->
+    <script type="text/javascript">
+		drawTiles();
+		//$('marquee').marquee(optionalClass);
+    </script>
+
+	</body>
+</html>
